@@ -18,21 +18,18 @@
 
       <ul>
         {% for task in tasks %}
-          <li class="task">
-            <h2>{{ task.title }}</h2>
-            <p>{{ task.description }}</p>
+        <li class="task">
+          <h2>{{ task.title }}</h2>
+          <p>{{ task.description }}</p>
 
-            {% if task.completed %}
-              <p class="status done">Completed</p>
-            {% else %}
-              <p class="status not-done">Incomplete</p>
-            {% endif %}
-          </li>
-        {% empty %}
-          <li>No tasks available.</li>
+          {% if task.completed %}
+          <p class="status done">Completed</p>
+          {% else %}
+          <p class="status not-done">Incomplete</p>
+          {% endif %}
+        </li>
         {% endfor %}
       </ul>
     </main>
   </body>
 </html>
- 
