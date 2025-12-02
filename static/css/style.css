@@ -1,0 +1,31 @@
+ul {
+  padding: 0;
+}
+
+.task {
+  list-style: none;
+  background: #f4f4f4;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  border: 4px solid gray;
+}
+
+.task h2 {
+  margin: 0 0 6px 0;
+}
+
+.status.done {
+  color: green;
+  font-weight: bold;
+}
+
+.status.not-done {
+  color: red;
+  font-weight: bold;
+}
+
+#main-h1,
+#to-do {
+  text-align: center;
+}
